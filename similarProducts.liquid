@@ -1,0 +1,4 @@
+{% assign best_selling = collection.products | sort: 'best-selling' %}
+{% for product in best_selling %}
+{{product.title}} <br>
+{% endfor %}
